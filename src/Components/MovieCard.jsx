@@ -1,3 +1,5 @@
+import StarIcon from "../../public/star.svg";
+
 // This is a presentational Component that doesn't handel any logic, but shows date directelly from API
 const MovieCard = ({
   movie: { title, vote_average, poster_path, release_date, original_language },
@@ -16,7 +18,7 @@ const MovieCard = ({
         <h3>{title}</h3>
         <div className="content">
           <div className="rating">
-            <img src="star.svg" alt="star icon" />
+            <img src={StarIcon} alt="star icon" />
             <p>{vote_average ? vote_average.toFixed(1) : `N/A`}</p>
           </div>
           <span>•</span>

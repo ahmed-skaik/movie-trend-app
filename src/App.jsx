@@ -3,6 +3,7 @@ import MovieCard from "./Components/MovieCard";
 import { useState, useEffect } from "react";
 import LoadingSpinner from "./Components/LoadingSpinner";
 import { useDebounce } from "react-use";
+import HeroImg from "../public/hero-img.png";
 // import { updateSearchCount } from "./appwrite";
 
 // if you know theat your keys won't change, you can name them liek this VARIABLE_NAME = -------
@@ -62,7 +63,7 @@ const App = () => {
       <div className="pattern" />
       <div className="wrapper">
         <header>
-          <img src="../public/hero-img.png" alt="hero" />
+          <img src={HeroImg} alt="hero" />
           <h1>
             Find <span className="text-gradient">Movies</span> You'll Enjoy
             Without the Hussle
