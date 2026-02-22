@@ -1,4 +1,4 @@
-import Search from "./Components/search";
+import Search from "./Components/Search";
 import MovieCard from "./Components/MovieCard";
 import { useState, useEffect } from "react";
 import LoadingSpinner from "./Components/LoadingSpinner";
